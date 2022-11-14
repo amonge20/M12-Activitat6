@@ -1,4 +1,4 @@
-package com.example.jaumebalmes.net;
+package com.example.practica6;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
