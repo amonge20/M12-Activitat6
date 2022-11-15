@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class course {
@@ -11,6 +12,9 @@ public class course {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	private String title;
+	
+	@OneToOne(mappedBy = "course")
+	private courseMaterial courseMaterial;
 	
 	public course(long id, String title) {
 		super();
