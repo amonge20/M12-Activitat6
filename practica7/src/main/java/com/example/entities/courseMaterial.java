@@ -1,6 +1,7 @@
 package com.example.entities;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.persistence.OneToOne;
 
@@ -47,5 +48,15 @@ public class courseMaterial {
 		return "courseMaterial [course=" + course + ", id=" + id + ", url=" + url + ", getCourse()=" + getCourse()
 				+ ", getId()=" + getId() + ", getUrl()=" + getUrl() + ", getClass()=" + getClass() + ", hashCode()="
 				+ hashCode() + ", toString()=" + super.toString() + "]";
+	}
+
+	public List<courseMaterial> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Optional<com.example.entities.course> findById(long id2) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

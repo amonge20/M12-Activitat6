@@ -55,8 +55,8 @@ public class controlerEntities {
 
 	// Te muestra al poner un id al final del link el alumno en concreto
 	@GetMapping("student/{nId}")
-	public student getStudent(@PathVariable long nId) {
-		student st1 = studentRep.findById(nId).get();
+	public course getStudent(@PathVariable long nId) {
+		course st1 = studentRep.findById(nId).get();
 		return st1;
 	}	
 }

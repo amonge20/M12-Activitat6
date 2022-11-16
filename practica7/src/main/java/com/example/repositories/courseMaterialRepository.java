@@ -7,5 +7,5 @@ import com.example.entities.*;
 
 public interface courseMaterialRepository extends CrudRepository<courseMaterial, Long> {
 	
-	List<courseMaterial> findAll();
+	public List<courseMaterial> findAll();
 }

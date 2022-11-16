@@ -1,12 +1,13 @@
 package com.example.entities;
 
 import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 @Entity
 public class student {
@@ -74,5 +75,15 @@ public class student {
 				+ ", getFirstName()=" + getFirstName() + ", getBirthDate()=" + getBirthDate() + ", isWantsNewsletter()="
 				+ isWantsNewsletter() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
 				+ super.toString() + "]";
+	}
+
+	public List<student> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Optional<course> findById(long nId) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
