@@ -1,29 +1,29 @@
-package com.example.entities;
+package com.example.practica6.entitats;
 
 import java.util.List;
 import java.util.Optional;
 
 import javax.persistence.OneToOne;
 
-public class courseMaterial {
+public class CourseMaterial {
 	@OneToOne
-	private course course;
+	private Course course;
 	
 	private long id;
 	private String url;
 	
-	public courseMaterial(com.example.entities.course course, long id, String url) {
+	public CourseMaterial(com.example.practica6.entitats.Course course, long id, String url) {
 		super();
 		this.course = course;
 		this.id = id;
 		this.url = url;
 	}
 	
-	public course getCourse() {
+	public Course getCourse() {
 		return course;
 	}
 	
-	public void setCourse(course course) {
+	public void setCourse(Course course) {
 		this.course = course;
 	}
 	
@@ -50,12 +50,12 @@ public class courseMaterial {
 				+ hashCode() + ", toString()=" + super.toString() + "]";
 	}
 
-	public List<courseMaterial> findAll() {
+	public List<CourseMaterial> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public Optional<com.example.entities.course> findById(long id2) {
+	public Optional<com.example.practica6.entitats.Course> findById(long id2) {
 		// TODO Auto-generated method stub
 		return null;
 	}

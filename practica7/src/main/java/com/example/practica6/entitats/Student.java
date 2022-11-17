@@ -1,4 +1,4 @@
-package com.example.entities;
+package com.example.practica6.entitats;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -10,7 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class student {
+public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
@@ -19,7 +19,7 @@ public class student {
 	private LocalDate birthDate;
 	private boolean wantsNewsletter;
 	
-	public student(long id, String lastName, String firstName, LocalDate birthDate, boolean wantsNewsletter) {
+	public Student(long id, String lastName, String firstName, LocalDate birthDate, boolean wantsNewsletter) {
 		super();
 		this.id = id;
 		this.lastName = lastName;
@@ -77,12 +77,12 @@ public class student {
 				+ super.toString() + "]";
 	}
 
-	public List<student> findAll() {
+	public List<Student> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public Optional<course> findById(long nId) {
+	public Optional<Course> findById(long nId) {
 		// TODO Auto-generated method stub
 		return null;
 	}

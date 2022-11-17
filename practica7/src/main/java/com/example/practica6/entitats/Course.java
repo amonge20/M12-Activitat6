@@ -1,24 +1,23 @@
-package com.example.entities;
+package com.example.practica6.entitats;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+
+import org.springframework.stereotype.Component;
 
 @Entity
-@ManyToOne()
-@JsonIgnore
-public class course {
+@Component
+public class Course {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	private String title;
 	
-	@OneToOne(mappedBy = "course")
-	private courseMaterial courseMaterial;
+	private CourseMaterial courseMaterial;
 	
-	public course(long id, String title) {
+	public Course(long id, String title) {
 		super();
 		this.id = id;
 		this.title = title;
